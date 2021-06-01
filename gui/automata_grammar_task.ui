@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QPushButton" name="back_btn">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>15</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover {
+    background-color: lightgreen;
+	color: white;
+}
+QPushButton{
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+border-radius:20px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>22</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+font: 75 22pt &quot;MS Shell Dlg 2&quot;;
+padding: 10 px;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Automata -&gt; Grammar</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back_button">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover {
+    background-color: lightgreen;
+	color: white;
+}
+QPushButton{
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+border-radius:20px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>521</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+color:white;</string>
+   </property>
+   <property name="title">
+    <string>Add Edge</string>
+   </property>
+   <widget class="QLineEdit" name="out_node">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>70</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+color:black;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Node</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>57</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="in_node">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>50</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+color:black;</string>
+    </property>
+    <property name="placeholderText">
+     <string>Node</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edge_label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>50</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+color:black;
+background-color:white;
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Label</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_edge_btn">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>50</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover {
+    background-color: black;
+	color: white;
+}
+QPushButton{
+background-color: rgb(203, 203, 203);
+color:black;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+border:2px solid lightgreen;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="automata_output">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>521</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:20px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="grammar_output">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>70</y>
+     <width>431</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 18pt &quot;MS Shell Dlg 2&quot;;
+border-radius:20px;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="del_btn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>655</y>
+     <width>521</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover {
+    background-color: black;
+	color: red;
+}
+QPushButton{
+background-color: rgb(203, 203, 203);
+color:black;
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+border:2px solid red ;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Delete Automata</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="solve_btn">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>620</y>
+     <width>431</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>20</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover {
+    background-color: orange;
+	color: white;
+}
+
+QPushButton{
+background-color: rgb(170, 255, 127);
+border-radius:10px;
+color:black solid;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>Get Grammar</string>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,24 @@
+digraph {
+	"Машина"
+	"Кроссовер"
+	"Седан"
+	"Кабриолет"
+	Jeep
+	Wolkswagen
+	Ferrari
+	"Машина" -> "Кроссовер" [label=1]
+	"Машина" -> "Седан" [label=1]
+	"Машина" -> "Кабриолет" [label=2]
+	"Кроссовер" -> Jeep [label=1]
+	"Седан" -> Wolkswagen [label=1]
+	"Кабриолет" -> Ferrari [label=1]
+	Jeep [color=blue]
+	6 [label="" shape=none]
+	Jeep -> 6 [color=blue]
+	Wolkswagen [color=blue]
+	7 [label="" shape=none]
+	Wolkswagen -> 7 [color=blue]
+	Ferrari [color=blue]
+	8 [label="" shape=none]
+	Ferrari -> 8 [color=blue]
+}

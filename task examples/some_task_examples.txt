@@ -1,0 +1,36 @@
+
+[Grammar to Automata]:
+
+#1 (from lectures):
+
+S->0S|1A
+A->0A|0B
+B->1B|lambda
+
+#2 (something interesting)
+
+Машина->1Кроссовер|1Седан|2Кабриолет
+Кроссовер->1Jeep
+Седан->1Wolkswagen
+Кабриолет->1Ferrari
+Jeep->lambda
+Wolkswagen->lambda
+Ferrari->lambda
+
+
+[Automata to Grammar]:
+ *** for this task you should create graph by adding edges ***
+
+
+[Morsiphier]:
+
+#1 (decrypt)
+
+... --- ... 
+
+
+#2 (encrypt)
+
+THIS IS SECRET MESSAGE
+
+
