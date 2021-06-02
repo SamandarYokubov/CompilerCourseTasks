@@ -273,6 +273,19 @@ border:2px solid lightgreen;
      <string>Add</string>
     </property>
    </widget>
+   <widget class="QCheckBox" name="left_body">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>50</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Left</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

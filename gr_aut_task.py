@@ -73,7 +73,10 @@ class GrammarAutomataTask(QDialog):
                 elif body == 'lambda':
                     nodes[head].add_edge('None', '')
                 else:
-                    nodes[head].add_edge(body[1:], body[0])
+                    if self.left_body.isChecked():
+                        nodes[head].add_edge(body[:-1], body[-1])
+                    else:                        
+                        nodes[head].add_edge(body[1:], body[0])
             if output_bodies != '':
                 nodes[head].add_edge('Finals', output_bodies[:-1])
 
