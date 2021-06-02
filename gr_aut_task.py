@@ -105,7 +105,7 @@ class GrammarAutomataTask(QDialog):
                     automata.edge(
                         node, to_node, label=nodes_and_edges[node].out_edges[to_node][:-1])
                 index_for_difference += 1
-        automata.render('graphs/automata', view=False)
-        automata_image = QPixmap('graphs/automata.png')
+        automata.render('graphs/grammar_to_automata', view=False)
+        automata_image = QPixmap('graphs/grammar_to_automata.png')
         self.automata_output.setPixmap(automata_image)
         self.automata_output.setAlignment(Qt.AlignCenter)

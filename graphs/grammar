@@ -1,3 +1,22 @@
 digraph {
+	S
 	S -> S [label=0]
+	A
+	S -> A [label=1]
+	B
+	S -> B [label=2]
+	f0 [label="" color=blue shape=circle]
+	A -> f0 [label=0]
+	0 [label="" shape=none]
+	f0 -> 0 [color=blue]
+	f1 [label="" color=blue shape=circle]
+	B -> f1 [label=0]
+	1 [label="" shape=none]
+	f1 -> 1 [color=blue]
+	2 [label="" shape=none]
+	A [color=blue]
+	A -> 2 [color=blue]
+	3 [label="" shape=none]
+	B [color=blue]
+	B -> 3 [color=blue]
 }

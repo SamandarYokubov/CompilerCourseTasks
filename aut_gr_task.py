@@ -31,8 +31,8 @@ class AutomataGrammarTask(QDialog):
     def delete(self):
         del self.automata
         self.automata = Digraph(format='png')
-        self.automata.render('graphs/grammar', view=False)
-        automata_image = QPixmap('graphs/grammar.png')
+        self.automata.render('graphs/automata_to_grammar', view=False)
+        automata_image = QPixmap('graphs/automata_to_grammar.png')
         self.automata_output.setPixmap(automata_image)
         self.automata_output.setAlignment(Qt.AlignCenter)
         self.grammar_output.clear()
@@ -107,7 +107,7 @@ class AutomataGrammarTask(QDialog):
         self.out_node.clear()
         self.in_node.clear()
         self.edge_label.clear()
-        self.automata.render('graphs/grammar', view=False)
-        automata_image = QPixmap('graphs/grammar.png')
+        self.automata.render('graphs/automata_to_grammar', view=False)
+        automata_image = QPixmap('graphs/automata_to_grammar.png')
         self.automata_output.setPixmap(automata_image)
         self.automata_output.setAlignment(Qt.AlignCenter)
