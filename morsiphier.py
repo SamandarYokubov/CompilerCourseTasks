@@ -79,7 +79,7 @@ class Morsiphier(QDialog):
                         if letter in self.MORSE_CODE_DICT.keys():
                             encrypted_text+=self.MORSE_CODE_DICT[letter]+' '
                         else:
-                            welcomescreen.execute_message_box('Cannot encrypt the lette -> '+letter,"Input Data Warning")
+                            welcomescreen.execute_message_box('Cannot encrypt the letter -> '+letter,"Input Data Warning")
                             return
                     else:
                         encrypted_text+=' '

@@ -16,7 +16,7 @@ class Node:
     def add_edge(self, to_node, label):
         if to_node not in self.out_edges.keys():
             self.out_edges[to_node] = ''
-        self.out_edges[to_node] += (label+',')
+        self.out_edges[to_node] = label
 
 
 class GrammarAutomataTask(QDialog):
@@ -94,19 +94,17 @@ class GrammarAutomataTask(QDialog):
                 if to_node == 'None':
                     automata.node(node, color='blue')
                     automata.node(str(index_for_difference), '', shape='none')
-                    automata.edge(
-                        node, str(index_for_difference), color='blue')
+                    automata.edge(node, str(index_for_difference), color='blue')
                 elif to_node == 'Finals':
                     automata.node('f'+str(index_for_difference),
                                   '', shape='circle', color='blue')
                     automata.edge(node, 'f'+str(index_for_difference),
-                                  label=nodes_and_edges[node].out_edges[to_node][:-1])
+                                  label=nodes_and_edges[node].out_edges[to_node])
                     automata.node(str(index_for_difference), '', shape='none')
                     automata.edge('f'+str(index_for_difference),
                                   str(index_for_difference), color='blue')
                 else:
-                    automata.edge(
-                        node, to_node, label=nodes_and_edges[node].out_edges[to_node][:-1])
+                    automata.edge(node, to_node, label=nodes_and_edges[node].out_edges[to_node])
                 index_for_difference += 1
         automata.render('graphs/grammar_to_automata', view=False)
         automata_image = QPixmap('graphs/grammar_to_automata.png')
